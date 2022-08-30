@@ -1,4 +1,4 @@
-
+## GIVE ME CREDIT IF YOU UPLOAD A VIDEO ON THIS CODE EITHER I WILL GIVE COPYRIGHT
 <h1>
     Suggestion Discord Bot
   </h1>
