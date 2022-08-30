@@ -1,0 +1,43 @@
+{
+  "name": "neon",
+  "version": "3.0.0",
+  "description": "Discord v13 handler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/voice": "^0.8.0",
+    "ascii-table": "^0.0.9",
+    "atob": "^2.1.2",
+    "better-sqlite3": "^7.6.2",
+    "canvas": "^2.9.3",
+    "capitalize-first-letter": "^1.0.0",
+    "cargo": "^0.8.0",
+    "chalk": "^4.1.2",
+    "colors": "^1.4.0",
+    "discord": "^0.8.2",
+    "discord-html-transcripts": "^2.6.0",
+    "discord.js": "^13.7.0",
+    "express": "^4.18.1",
+    "ffmpeg": "^0.0.4",
+    "fs": "^0.0.1-security",
+    "glob": "^7.1.7",
+    "kaira77": "^4.0.0",
+    "libsodium-wrappers": "^0.7.9",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^6.0.5",
+    "ms": "^2.1.3",
+    "node-fetch": "^3.0.0",
+    "node-gyp": "^9.1.0",
+    "ocr-space-api-wrapper": "^2.1.1",
+    "opus": "^0.0.0",
+    "prism-media": "^2.0.0-alpha.0",
+    "quick.db": "^7.1.3"
+  }
+}
