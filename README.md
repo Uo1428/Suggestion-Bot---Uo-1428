@@ -4,7 +4,7 @@
   </h1>
   <p>
 
-[![discordBadge](https://img.shields.io/badge/Chat-Coding%20Planet-7289d9?style=for-the-badge&logo=discord)](https://discord.gg/modsa)
+[![discordBadge](https://images-ext-1.discordapp.net/external/ca2WRwc3T2Jk_38tIcBZpchhwHvDtsLx9A7KXisJDSg/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/988355498371842108/a33a57b0ac0d38e5c20f4d1502ea1e59.webp?width=663&height=663)](https://discord.gg/modsa)
 </p>
 
 ## About
@@ -21,8 +21,9 @@ Invite your Discord Bot with `bot` and `applications.commands` scope
 ## Projects
 - [Youtube](https://www.youtube.com/channel/UCO3n5jkicyNy-3h2KDyXa4Q) - My `Youtube Channel`
 - [Discord Server](https://discord.gg/modsa) - My `Discord Server`
-- [GitHub] (https://github.com/Ayushselfcoder) - Ayush `Github`
+- [GitHub](https://github.com/Ayushselfcoder) - Ayush `Github`
 
 
 ## Preview
-https://cdn.discordapp.com/attachments/976085007661690894/1014150813058338957/My_Video.webm
+[My Video.webm](https://user-images.githubusercontent.com/102340150/187439201-82a01767-9cb6-4bc7-bb78-adf2f1b20617.webm)
+
