@@ -25,5 +25,6 @@ Invite your Discord Bot with `bot` and `applications.commands` scope
 
 
 ## Preview
-[My Video.webm](https://user-images.githubusercontent.com/102340150/187439201-82a01767-9cb6-4bc7-bb78-adf2f1b20617.webm)
 
+
+[My Video1.webm](https://user-images.githubusercontent.com/102340150/187439866-deab7297-aec2-4466-8d14-2181089e49c9.webm)
