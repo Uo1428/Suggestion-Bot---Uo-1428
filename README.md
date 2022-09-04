@@ -5,7 +5,7 @@
 
 # Set Up
 - Watch YouTube Video ->  https://youtu.be/dZrHfKoPmtw
-## Support Server
+## 💗 Support Server
 <div align="center">
   <a width="100%" href="https://discord.gg/pXRT2FusPb"  target="_blank">
     <img align="left" width="100%" style="margin: 0 10px 0 0;" alt=" " src="
