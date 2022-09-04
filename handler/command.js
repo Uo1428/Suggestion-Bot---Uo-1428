@@ -51,25 +51,23 @@ module.exports = async (client) => {
     console.log((`✅ ${file} - Events Loads Success`).bgMagenta);
   });
   ////
- 
+
   // starting the slashcommands
   const slashCommands = await globPromise(
     `${process.cwd()}/slashCommands/*/*.js`
-);
+  );
 
-const arrayOfSlashCommands = [];
-slashCommands.map((value) => {
+  const arrayOfSlashCommands = [];
+  slashCommands.map((value) => {
     const file = require(value);
     if (!file?.name) return;
     client.slashCommands.set(file.name, file);
     arrayOfSlashCommands.push(file);
-});
-client.on("ready", async () => {
+  });
+  client.on("ready", async () => {
     client.guilds.cache.forEach(async (g) => {
       await client.guilds.cache.get(g.id).commands.set(arrayOfSlashCommands);
     });
+  });
 
- 
-});
-
-}; 
+};

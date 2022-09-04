@@ -19,6 +19,7 @@
     "capitalize-first-letter": "^1.0.0",
     "cargo": "^0.8.0",
     "chalk": "^4.1.2",
+    "chartjs-node-canvas": "^4.1.6",
     "colors": "^1.4.0",
     "discord": "^0.8.2",
     "discord-html-transcripts": "^2.6.0",

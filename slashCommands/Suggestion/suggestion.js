@@ -4,116 +4,116 @@ const em = require('../../config/emojis.json')
 const ee = require("../../config/embed.json")
 
 module.exports = {
-    name: "suggestion",
-    description: "Sets or resets the Suggestion Channel",
-    userperm: ["MANAGE_GUILD"],
-    botperm: ["MANAGE_CHANNELS"],
-    ownerOnly: false,
-    options: [
+  name: "suggestion",
+  description: "Sets or resets the Suggestion Channel",
+  userperm: ["MANAGE_GUILD"],
+  botperm: ["MANAGE_CHANNELS"],
+  ownerOnly: false,
+  options: [
+    {
+      name: "set",
+      description: "Sets the Suggestion channel",
+      type: "SUB_COMMAND",
+      options: [
         {
-            name: "set",
-            description: "Sets the Suggestion channel",
-            type: "SUB_COMMAND",
-            options: [
-                {
-                    name: "channel",
-                    description: "Select the channel",
-                    type: "CHANNEL",
-                    required: false
-                }
+          name: "channel",
+          description: "Select the channel",
+          type: "CHANNEL",
+          required: false
+        }
+      ]
+    },
+    {
+      name: "reset",
+      description: "Resets the Suggestion channel",
+      type: "SUB_COMMAND",
+    },
+  ],
+  run: async (client, interaction, args) => {
+
+    const { options, user, channel, guild } = interaction
+
+    switch (options.getSubcommand()) {
+
+      case "set": {
+
+        const channel = options.getChannel("channel") || channel
+
+        SuggestionDB.findOne({ Guild: guild.id }, async (err, data) => {
+
+          if (err) throw err
+
+          if (data) {
+
+            data.delete()
+
+            data = new SuggestionDB({
+              Guild: guild.id,
+              Channel: channel.id
+            })
+            await data.save()
+
+          } else {
+
+            data = new SuggestionDB({
+              Guild: guild.id,
+              Channel: channel.id
+            })
+            await data.save()
+
+          }
+
+          return interaction.followUp({
+            embeds: [
+              new MessageEmbed()
+                .setColor(ee.color)
+                .setDescription(`${em.success} - ${channel} is now set as Suggestion Channel`)
             ]
-        },
-        {
-            name: "reset",
-            description: "Resets the Suggestion channel",
-            type: "SUB_COMMAND",
-        },
-    ],
-  run: async(client, interaction, args) => {
-    
-        const { options, user, channel, guild } = interaction
+          })
 
-        switch (options.getSubcommand()) {
+        })
 
-            case "set": {
+      }
+        break;
 
-                const channel = options.getChannel("channel") || channel
+      case "reset": {
 
-                SuggestionDB.findOne({ Guild: guild.id }, async (err, data) => {
+        SuggestionDB.findOne({ Guild: guild.id }, async (err, data) => {
 
-                    if (err) throw err
+          if (err) throw err
 
-                    if (data) {
+          if (data) {
 
-                        data.delete()
+            data.delete()
 
-                        data = new SuggestionDB({
-                            Guild: guild.id,
-                            Channel: channel.id
-                        })
-                        await data.save()
+            return interaction.followUp({
+              embeds: [
+                new MessageEmbed()
+                  .setColor(ee.color)
+                  .setDescription(`${em.success} - Suggestion Channel has been reset to none`)
 
-                    } else {
+              ]
+            })
 
-                        data = new SuggestionDB({
-                            Guild: guild.id,
-                            Channel: channel.id
-                        })
-                        await data.save()
+          } else {
 
-                    }
+            return interaction.followUp({
+              embeds: [
+                new MessageEmbed()
+                  .setColor(ee.color)
+                  .setDescription(`${em.success} - Suggestion Channel has already been reset to none`)
 
-                    return interaction.followUp({
-                        embeds: [
-                            new MessageEmbed()
-                                .setColor(ee.color)
-                                .setDescription(`${em.success} - ${channel} is now set as Suggestion Channel`)
-                        ]
-                    })
+              ]
+            })
 
-                })
+          }
 
-            }
-                break;
+        })
 
-            case "reset": {
+      }
+        break;
 
-                SuggestionDB.findOne({ Guild: guild.id }, async (err, data) => {
+    }
 
-                    if (err) throw err
-
-                    if (data) {
-
-                        data.delete()
-
-                        return interaction.followUp({
-                            embeds: [
-                                new MessageEmbed()
-                                    .setColor(ee.color)
-                                    .setDescription(`${em.success} - Suggestion Channel has been reset to none`)
-
-                            ]
-                        })
-
-                    } else {
-
-                        return interaction.followUp({
-                            embeds: [
-                                new MessageEmbed()
-                                    .setColor(ee.color)
-                                    .setDescription(`${em.success} - Suggestion Channel has already been reset to none`)
-
-                            ]
-                        })
-
-                    }
-
-                })
-
-            }
-                break;
-
-             }
-    
   }
 }

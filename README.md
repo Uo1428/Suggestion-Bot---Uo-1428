@@ -1,30 +1,14 @@
-## GIVE ME CREDIT IF YOU UPLOAD A VIDEO ON THIS CODE EITHER I WILL GIVE COPYRIGHT
-<h1>
-    Suggestion Discord Bot
-  </h1>
-  <p>
+# Suggestion Bot
+# [ALL IN ONΞ™](https://tinyurl.com/3jvb65tv)
+## [YouTube](https://tinyurl.com/3jvb65tv )
+### [Support Server](https://discord.gg/ndfEefv9aw)
 
-[![discordBadge](https://images-ext-1.discordapp.net/external/ca2WRwc3T2Jk_38tIcBZpchhwHvDtsLx9A7KXisJDSg/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/988355498371842108/a33a57b0ac0d38e5c20f4d1502ea1e59.webp?width=663&height=663)](https://discord.gg/modsa)
-</p>
+# Set Up
+- Watch YouTube Video ->  https://youtu.be/dZrHfKoPmtw
 
-## About
-A powerful Slash `Suggestion` Discord Bot
-Best Thing Is it has a Update Button Also From Which You Can Also Update your Suggestion
-
-## Installation
-To get started clone this repository and run `npm install && node .`.
-
-## Setting Up
-Go To ```config.json``` and Change The Mongo DB and Type Your Bot's Token
-Invite your Discord Bot with `bot` and `applications.commands` scope
-
-## Projects
-- [Youtube](https://www.youtube.com/channel/UCO3n5jkicyNy-3h2KDyXa4Q) - My `Youtube Channel`
-- [Discord Server](https://discord.gg/modsa) - My `Discord Server`
-- [GitHub](https://github.com/Ayushselfcoder) - Ayush `Github`
-
-
-## Preview
-
-
-[My Video1.webm](https://user-images.githubusercontent.com/102340150/187439866-deab7297-aec2-4466-8d14-2181089e49c9.webm)
+## ✨ Discord Profile
+<div align="center">
+  <a width="100%" href="https://discord.gg/pXRT2FusPb"  target="_blank">
+    <img align="left" width="100%" style="margin: 0 10px 0 0;" alt=" " src="https://discord.c99.nl/widget/theme-2/784649693363306518.png">
+  </a>
+</div>

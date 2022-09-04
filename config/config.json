@@ -1,10 +1,4 @@
 {
-    "token": "",
-    "prefix": "$^&",
-    "mongoUrl": "mongodb+srv://Op:gopi@cluster0.8ccql.mongodb.net/?retryWrites=true&w=majority",
-    "owners": [
-        "OWNER ID: 1",
-       "OWNER ID: 2"]
-
-
+  "mongoUrl": "mongodb+srv://Op:gopi@cluster0.8ccql.mongodb.net/?retryWrites=true&w=majority",
+  "owners": [""]
 }
